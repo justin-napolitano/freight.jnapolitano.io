@@ -8,13 +8,6 @@ title: Justin Napolitano
 :::
 
 
-:::{admonition} About
-
-freight.jnapolitano.io is a website that analyzes freight and transport.  I am expanding this project daily. 
-
-:::
-
-
 ## Rail 
 
 :::{raw} html
