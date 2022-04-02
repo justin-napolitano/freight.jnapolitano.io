@@ -8,7 +8,7 @@ title: Justin Napolitano
 :::
 
 
-## Rail 
+## Overview
 
 :::{raw} html
 
@@ -22,9 +22,43 @@ title: Justin Napolitano
 :maxdepth: 1
 
 parts/freight/FreightRail.ipynb
+```
+:::
+
+## Rail 
+
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: Rail
+:maxdepth: 1
+
 parts/freight/Testing.md
 ```
 :::
+
+## Shipping 
+
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: US Shipping Routes and Ports
+:maxdepth: 1
+
+parts/freight/Shipping.md
+```
+:::
+
 
 
 
