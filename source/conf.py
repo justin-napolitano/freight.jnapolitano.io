@@ -74,6 +74,7 @@ extensions = [
 #    "sphinx_panels"
 ]
 
+nbsphinx_timeout = -1
 #Cautodoc Setup
 
 cautodoc_root = os.path.abspath("codebase/project-c-reference")
