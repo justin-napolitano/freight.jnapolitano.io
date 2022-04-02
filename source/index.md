@@ -76,6 +76,23 @@ parts/freight/intermodal.md
 ```
 :::
 
+## Freight Network Analysis
+
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: Freight Network Analysis
+:maxdepth: 1
+
+parts/freight/us_network.ipynb
+```
+:::
+
 
 ## Contact
 

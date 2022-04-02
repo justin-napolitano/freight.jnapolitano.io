@@ -184,7 +184,7 @@ line_wm = line_df.to_crs(epsg=3857)
 
 
 ax = line_wm.plot(figsize=(10, 10), alpha=0.5, edgecolor='k', markersize = .5)
-cx.add_basemap(ax, zoom=7)
+cx.add_basemap(ax, zoom=6)
 
 
 # #### Printing Data Fields

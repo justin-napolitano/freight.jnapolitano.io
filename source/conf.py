@@ -74,9 +74,9 @@ extensions = [
 #    "sphinx_panels"
 ]
 #jupyter_execute_notebooks = "auto"
-jupyter_execution_timeout=-1
-nbsphinx_timeout = -1
-timeout=-1
+jupyter_execution_timeout= 100
+nbsphinx_timeout = 100
+timeout= 100
 execution_timeout = -1
 #jupyter_execute_notebooks = "auto"
 jupyter_execute_notebooks = "cache"
