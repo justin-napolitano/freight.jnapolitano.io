@@ -1,0 +1,143 @@
+---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.13.7
+kernelspec:
+  display_name: finance
+  language: python
+  name: finance
+---
+
+# Mapping US Shipping Routes and Ports
+
+## About
+
+Exploring the US Shipping Dataset 
+
+This is a precursor project to one that will create a graph of rail, shipping, trucking, and air freight transport networks for analysis. 
+
+
++++
+
+## Import Functions
+
+```{code-cell} ipython3
+import pandas as pd
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import folium
+import contextily as cx
+```
+
+## Reading Node Shape Data into gpd DF
+ 
+
+```{code-cell} ipython3
+gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Navigable_Waterway_Lines.geojson"
+
+waterway_df = gpd.read_file(gisfilepath)
+
+
+
+waterway_df.head()
+```
+
+## Checking Cooridindate System.  
+
+The coordinate system must be in the epsg 3857 format to overlay.
+
+```{code-cell} ipython3
+waterway_df.crs
+```
+
+### Converting to EPSG 3857 System 
+
+
+```{code-cell} ipython3
+df_wm = waterway_df.to_crs(epsg=3857)
+```
+
+```{code-cell} ipython3
+ax = df_wm.plot(figsize=(20, 20), alpha=0.5, edgecolor='k')
+cx.add_basemap(ax, zoom=4)
+```
+
+### First Impressions of the Data
+
+The Gulf Waters are interestengly concentrated and dependent on non US Ports.  For instance the Gulf-Carribean Access Point concentrates near the Yucatan penninsula.  There is also a major concentration near the islands of cuba and hispanola. This surpise me I would have considered Puerto Rico to be a more important shipping route.  
+
++++
+
+## Exploring US Ports 
+
+```{code-cell} ipython3
+gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Ports.geojson"
+
+ports_df = gpd.read_file(gisfilepath)
+
+ports_df
+```
+
+```{code-cell} ipython3
+ports_df.columns
+```
+
+#### Initial Impressions.  
+There are 24,1117 ports recorded in this dataset.  There are also 43 fields of data.  Columns of interests are Highway_No and Railway_No.  I would like to investigate this further.  
+
++++
+
+### Converting to EPSG 3857 System 
+
+
+```{code-cell} ipython3
+ports_df_wm = ports_df.to_crs(epsg=3857)
+```
+
+```{code-cell} ipython3
+ax = ports_df_wm.plot(figsize=(20, 20), alpha=0.5, edgecolor='k')
+cx.add_basemap(ax, zoom=4)
+```
+
+## Interactive Ports Map
+
+```{code-cell} ipython3
+ports_df_wm.explore()
+```
+
+### Results
+
+It is interesting to see all of the ports in the UNited States, but I notice that the majority are small ports registered by organizations to move goods to market.  For the purpose of this analysis there is too much noise to yield information.  
+
++++
+
+## Filtering only for Major US Ports
+
+```{code-cell} ipython3
+gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Major_Ports.geojson"
+
+major_ports_df = gpd.read_file(gisfilepath)
+
+major_ports_df
+```
+
+```{code-cell} ipython3
+major_ports_df.columns
+```
+
+### Initial Impressions
+
+This data is far more managable.  It also contains data relating to freight volumes.  
+
+```{code-cell} ipython3
+major_ports_df_wm = major_ports_df.to_crs(epsg=3857)
+```
+
+### Interactive Ports Map
+
+```{code-cell} ipython3
+major_ports_df.explore()
+```
