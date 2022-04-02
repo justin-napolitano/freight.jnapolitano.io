@@ -22,6 +22,7 @@ title: Justin Napolitano
 :maxdepth: 1
 
 parts/freight/FreightRail.ipynb
+parts/freight/RailMapping.ipynb
 ```
 :::
 
