@@ -59,7 +59,22 @@ parts/freight/Shipping.md
 ```
 :::
 
+## Intermodal Freight Stations
 
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: US Intermodal Shipping
+:maxdepth: 1
+
+parts/freight/intermodal.md
+```
+:::
 
 
 ## Contact
