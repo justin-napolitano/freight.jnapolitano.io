@@ -1,0 +1,1393 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Rail Mapping" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="parts/freight/RailMapping.html" />
+  <meta property="og:description" content="About: Mapping Rail Lines and Rail Nodes in the United States. This is a precursor project to one that will create a graph of rail, shipping, trucking, and air freight transport networks for analys..." />
+  
+    <title>Rail Mapping &#8212; freight.jnapolitano.io</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/FAVICON.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Contact Justin Napolitano" href="../contact/index.html" />
+    <link rel="prev" title="United States Freight Overview" href="FreightRail.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../journal/posts/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   freight.jnapolitano.io
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Rail
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="FreightRail.html">
+   United States Freight Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Rail Mapping
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contact
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contact/index.html">
+   Contact Justin Napolitano
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tables and Indices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../genindex.html">
+   Index
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../../_sources/parts/freight/RailMapping.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/freight/RailMapping.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/justin-napolitano/cv"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about">
+   About
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-functions">
+   Import Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-node-shape-data-into-gpd-df">
+   Reading Node Shape Data into gpd DF
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#checking-cooridindate-system">
+   Checking Cooridindate System.
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#converting-to-epsg-3857-system">
+     Converting to EPSG 3857 System
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-every-rail-node-in-the-united-states-mexico-and-canada">
+   Plotting Every Rail node in the United States, Mexico, and Canada
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discussion-of-results-thus-far">
+   Discussion of results Thus Far
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#detail">
+     Detail
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-steps">
+     Next Steps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-data-with-smaller-markers">
+   Plotting Data with Smaller Markers
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#results">
+     Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering-the-dataset">
+   Filtering the Dataset
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#printing-the-head-of-the-dataframe-for-review">
+     Printing the head of the dataframe for review
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#western-us-transit-bottle-necks">
+     Western US Transit Bottle Necks.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#understanding-the-fields">
+       Understanding the Fields
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#unique-passngr-values">
+         Unique PASSNGR Values
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Results
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#unique-passngrstn-values">
+         Unique PASSNGRSTN Values
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h6 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#id2">
+           Results
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#unique-fradistrict">
+         Unique FRADISTRICT
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attempting-to-discern-meaning-from-an-accompanying-dataset">
+   Attempting to Discern meaning from an Accompanying Dataset
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-the-rail-line-data">
+     Loading the Rail Line Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Checking Cooridindate System.
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Converting to EPSG 3857 System
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-every-rail-line-in-the-united-states-mexico-and-canada">
+   Plotting Every Rail Line in the United States, Mexico, and Canada
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Rail Mapping</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about">
+   About
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-functions">
+   Import Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-node-shape-data-into-gpd-df">
+   Reading Node Shape Data into gpd DF
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#checking-cooridindate-system">
+   Checking Cooridindate System.
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#converting-to-epsg-3857-system">
+     Converting to EPSG 3857 System
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-every-rail-node-in-the-united-states-mexico-and-canada">
+   Plotting Every Rail node in the United States, Mexico, and Canada
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discussion-of-results-thus-far">
+   Discussion of results Thus Far
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#detail">
+     Detail
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-steps">
+     Next Steps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-data-with-smaller-markers">
+   Plotting Data with Smaller Markers
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#results">
+     Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering-the-dataset">
+   Filtering the Dataset
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#printing-the-head-of-the-dataframe-for-review">
+     Printing the head of the dataframe for review
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#western-us-transit-bottle-necks">
+     Western US Transit Bottle Necks.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#understanding-the-fields">
+       Understanding the Fields
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#unique-passngr-values">
+         Unique PASSNGR Values
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Results
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#unique-passngrstn-values">
+         Unique PASSNGRSTN Values
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h6 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#id2">
+           Results
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#unique-fradistrict">
+         Unique FRADISTRICT
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attempting-to-discern-meaning-from-an-accompanying-dataset">
+   Attempting to Discern meaning from an Accompanying Dataset
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-the-rail-line-data">
+     Loading the Rail Line Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Checking Cooridindate System.
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Converting to EPSG 3857 System
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-every-rail-line-in-the-united-states-mexico-and-canada">
+   Plotting Every Rail Line in the United States, Mexico, and Canada
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="rail-mapping">
+<h1>Rail Mapping<a class="headerlink" href="#rail-mapping" title="Permalink to this headline">¶</a>
+</h1>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a>
+</h2>
+<p>Mapping Rail Lines and Rail Nodes in the United States.</p>
+<p>This is a precursor project to one that will create a graph of rail, shipping, trucking, and air freight transport networks for analysis.</p>
+</div>
+<div class="section" id="import-functions">
+<h2>Import Functions<a class="headerlink" href="#import-functions" title="Permalink to this headline">¶</a>
+</h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">import</span> <span class="nn">folium</span>
+<span class="kn">import</span> <span class="nn">contextily</span> <span class="k">as</span> <span class="nn">cx</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="reading-node-shape-data-into-gpd-df">
+<h2>Reading Node Shape Data into gpd DF<a class="headerlink" href="#reading-node-shape-data-into-gpd-df" title="Permalink to this headline">¶</a>
+</h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">shapefilepath</span> <span class="o">=</span> <span class="s2">"/Users/jnapolitano/Projects/rail-mapping/North_American_Rail_Nodes/North_American_Rail_Nodes.shp"</span>
+
+<span class="n">node_df</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">shapefilepath</span><span class="p">)</span>
+
+
+
+<span class="n">node_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>FRANODEID</th>
+      <th>COUNTRY</th>
+      <th>STATE</th>
+      <th>STFIPS</th>
+      <th>CTYFIPS</th>
+      <th>STCYFIPS</th>
+      <th>FRADISTRCT</th>
+      <th>PASSNGR</th>
+      <th>PASSNGRSTN</th>
+      <th>BNDRY</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>300000</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-156.68973 20.93653)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>300001</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-156.68972 20.93916)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>300002</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-156.67932 20.88014)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>300003</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-156.67863 20.88102)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>300004</td>
+      <td>US</td>
+      <td>AK</td>
+      <td>02</td>
+      <td>170</td>
+      <td>02170</td>
+      <td>8</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-150.12336 62.39174)</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section" id="checking-cooridindate-system">
+<h2>Checking Cooridindate System.<a class="headerlink" href="#checking-cooridindate-system" title="Permalink to this headline">¶</a>
+</h2>
+<p>The coordinate system must be in the epsg 3857 format to overlay.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">node_df</span><span class="o">.</span><span class="n">crs</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>&lt;Geographic 2D CRS: EPSG:4326&gt;
+Name: WGS 84
+Axis Info [ellipsoidal]:
+- Lat[north]: Geodetic latitude (degree)
+- Lon[east]: Geodetic longitude (degree)
+Area of Use:
+- name: World.
+- bounds: (-180.0, -90.0, 180.0, 90.0)
+Datum: World Geodetic System 1984 ensemble
+- Ellipsoid: WGS 84
+- Prime Meridian: Greenwich
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="converting-to-epsg-3857-system">
+<h3>Converting to EPSG 3857 System<a class="headerlink" href="#converting-to-epsg-3857-system" title="Permalink to this headline">¶</a>
+</h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">df_wm</span> <span class="o">=</span> <span class="n">node_df</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="plotting-every-rail-node-in-the-united-states-mexico-and-canada">
+<h2>Plotting Every Rail node in the United States, Mexico, and Canada<a class="headerlink" href="#plotting-every-rail-node-in-the-united-states-mexico-and-canada" title="Permalink to this headline">¶</a>
+</h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df_wm</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'k'</span><span class="p">)</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/RailMapping_10_0.png" src="../../_images/RailMapping_10_0.png">
+</div>
+</div>
+</div>
+<div class="section" id="discussion-of-results-thus-far">
+<h2>Discussion of results Thus Far<a class="headerlink" href="#discussion-of-results-thus-far" title="Permalink to this headline">¶</a>
+</h2>
+<div class="section" id="detail">
+<h3>Detail<a class="headerlink" href="#detail" title="Permalink to this headline">¶</a>
+</h3>
+<p>Mapping every node in the data set produces too much noise to be useful.  It is interesting though that the rail coverage in north america nearly covers the entire continent.</p>
+</div>
+<div class="section" id="next-steps">
+<h3>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a>
+</h3>
+<p>I will decrease the marker size to see if it improved the detail and usability of the plot.</p>
+</div>
+</div>
+<div class="section" id="plotting-data-with-smaller-markers">
+<h2>Plotting Data with Smaller Markers<a class="headerlink" href="#plotting-data-with-smaller-markers" title="Permalink to this headline">¶</a>
+</h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df_wm</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'k'</span><span class="p">,</span> <span class="n">markersize</span> <span class="o">=</span> <span class="mf">.5</span><span class="p">)</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/RailMapping_13_0.png" src="../../_images/RailMapping_13_0.png">
+</div>
+</div>
+<div class="section" id="results">
+<h3>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a>
+</h3>
+<p>We have increased our detail to an acceptable level to understand just how interconnected the rail system is in North America.  The data plotted thus far is a collection of all points. Next, we’ll review the data to identify points that may yield more interesting results</p>
+</div>
+</div>
+<div class="section" id="filtering-the-dataset">
+<h2>Filtering the Dataset<a class="headerlink" href="#filtering-the-dataset" title="Permalink to this headline">¶</a>
+</h2>
+<div class="section" id="printing-the-head-of-the-dataframe-for-review">
+<h3>Printing the head of the dataframe for review<a class="headerlink" href="#printing-the-head-of-the-dataframe-for-review" title="Permalink to this headline">¶</a>
+</h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">df_wm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>FRANODEID</th>
+      <th>COUNTRY</th>
+      <th>STATE</th>
+      <th>STFIPS</th>
+      <th>CTYFIPS</th>
+      <th>STCYFIPS</th>
+      <th>FRADISTRCT</th>
+      <th>PASSNGR</th>
+      <th>PASSNGRSTN</th>
+      <th>BNDRY</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>300000</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-17442620.562 2384312.109)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>300001</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-17442620.281 2384624.961)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>300002</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-17441462.226 2377592.829)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>300003</td>
+      <td>US</td>
+      <td>HI</td>
+      <td>15</td>
+      <td>009</td>
+      <td>15009</td>
+      <td>7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-17441385.698 2377697.091)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>300004</td>
+      <td>US</td>
+      <td>AK</td>
+      <td>02</td>
+      <td>170</td>
+      <td>02170</td>
+      <td>8</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0</td>
+      <td>POINT (-16711656.316 8952635.016)</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section" id="western-us-transit-bottle-necks">
+<h3>Western US Transit Bottle Necks.<a class="headerlink" href="#western-us-transit-bottle-necks" title="Permalink to this headline">¶</a>
+</h3>
+<p>There is an obvious bottle neck present on the maps plotted above.  The western United States appears to be serviced by 2 or 3 rail lines that branch out near Colorado.  I want to investigate this further.</p>
+<div class="section" id="understanding-the-fields">
+<h4>Understanding the Fields<a class="headerlink" href="#understanding-the-fields" title="Permalink to this headline">¶</a>
+</h4>
+<p>The data source does not detail the fields very well.  https://geo.dot.gov/mapping/rest/services/NTAD/North_American_Rail_Nodes/MapServer/0</p>
+<p>Unfortunately, we’ll have to infer their meaning.</p>
+<div class="section" id="unique-passngr-values">
+<h5>Unique PASSNGR Values<a class="headerlink" href="#unique-passngr-values" title="Permalink to this headline">¶</a>
+</h5>
+<p>My best guess is that these values designate nodes that serve passenger transport.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">df_wm</span><span class="p">[</span><span class="s1">'PASSNGR'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>array([None, 'A', 'C', 'B', 'b', 'R'], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h5>Results<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a>
+</h5>
+<p>It is still not clear what these values translate to.  I’ll have to continue investigating.</p>
+</div>
+<div class="section" id="unique-passngrstn-values">
+<h5>Unique PASSNGRSTN Values<a class="headerlink" href="#unique-passngrstn-values" title="Permalink to this headline">¶</a>
+</h5>
+<p>My best guess is that these values designate nodes that serve as passenger transport terminals.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">df_wm</span><span class="p">[</span><span class="s1">'PASSNGRSTN'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>[None 'Albany' 'Eugene' ... 'Chelsea' 'Rockport'
+ '59th St. (U. of Chicago)']
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h6>Results<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a>
+</h6>
+<p>I think my guess is correct.  These are definetely commmuter stations.  I recognize Boston Landing and 59th ST. (U. of Chicago) from travel.  I can’t assume however that these are only passenger stations.  They may also be freight connections.  Therefore, I cannot yet eliminate them from the dataset.</p>
+</div>
+</div>
+<div class="section" id="unique-fradistrict">
+<h5>Unique FRADISTRICT<a class="headerlink" href="#unique-fradistrict" title="Permalink to this headline">¶</a>
+</h5>
+<p>These values are associated with Federal Railroad Association Districts.  I was able to find the the key for the values at https://railroads.dot.gov/divisions/regional-offices/safety-management-teams.</p>
+<p>This will be useful to investigate the bottle necks by railway and safety zone, but still does not help me to completely eliminate commuter and passengers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">df_wm</span><span class="p">[</span><span class="s1">'FRADISTRCT'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>[ 7  8 99  6  5  4  3  2  1]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="attempting-to-discern-meaning-from-an-accompanying-dataset">
+<h2>Attempting to Discern meaning from an Accompanying Dataset<a class="headerlink" href="#attempting-to-discern-meaning-from-an-accompanying-dataset" title="Permalink to this headline">¶</a>
+</h2>
+<p>I could not infer exactly what the node data means without the keys.  I will have to look online for more information.  In the mean time however I will map and explore the rail line data.</p>
+<div class="section" id="loading-the-rail-line-data">
+<h3>Loading the Rail Line Data<a class="headerlink" href="#loading-the-rail-line-data" title="Permalink to this headline">¶</a>
+</h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">shapefilepath</span> <span class="o">=</span> <span class="s2">"/Users/jnapolitano/Projects/rail-mapping/North_American_Rail_Lines/North_American_Rail_Lines.shp"</span>
+
+<span class="n">line_df</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">shapefilepath</span><span class="p">)</span>
+
+
+
+<span class="n">line_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>FRAARCID</th>
+      <th>FRFRANODE</th>
+      <th>TOFRANODE</th>
+      <th>STFIPS</th>
+      <th>CNTYFIPS</th>
+      <th>STCNTYFIPS</th>
+      <th>STATEAB</th>
+      <th>COUNTRY</th>
+      <th>FRADISTRCT</th>
+      <th>...</th>
+      <th>CARDDIRECT</th>
+      <th>NET</th>
+      <th>MILES</th>
+      <th>KM</th>
+      <th>TIMEZONE</th>
+      <th>IM_RT_TYPE</th>
+      <th>DBLSTK</th>
+      <th>Shape_Leng</th>
+      <th>ShapeSTLen</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>300000</td>
+      <td>348741</td>
+      <td>348746</td>
+      <td>38</td>
+      <td>015</td>
+      <td>38015</td>
+      <td>ND</td>
+      <td>US</td>
+      <td>8</td>
+      <td>...</td>
+      <td>None</td>
+      <td>M</td>
+      <td>0.178101</td>
+      <td>0.286626</td>
+      <td>C</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0.003194</td>
+      <td>418.656759</td>
+      <td>LINESTRING (-100.74521 46.80285, -100.74509 46...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>300001</td>
+      <td>338567</td>
+      <td>338686</td>
+      <td>30</td>
+      <td>087</td>
+      <td>30087</td>
+      <td>MT</td>
+      <td>US</td>
+      <td>8</td>
+      <td>...</td>
+      <td>None</td>
+      <td>O</td>
+      <td>0.886585</td>
+      <td>1.426824</td>
+      <td>M</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0.017227</td>
+      <td>2047.012225</td>
+      <td>LINESTRING (-106.65759 45.86405, -106.65769 45...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>300002</td>
+      <td>330112</td>
+      <td>330117</td>
+      <td>16</td>
+      <td>031</td>
+      <td>16031</td>
+      <td>ID</td>
+      <td>US</td>
+      <td>8</td>
+      <td>...</td>
+      <td>None</td>
+      <td>M</td>
+      <td>0.221820</td>
+      <td>0.356985</td>
+      <td>M</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0.004269</td>
+      <td>483.919572</td>
+      <td>LINESTRING (-113.78532 42.54225, -113.78342 42...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>300003</td>
+      <td>330113</td>
+      <td>330116</td>
+      <td>16</td>
+      <td>031</td>
+      <td>16031</td>
+      <td>ID</td>
+      <td>US</td>
+      <td>8</td>
+      <td>...</td>
+      <td>None</td>
+      <td>I</td>
+      <td>0.127571</td>
+      <td>0.205306</td>
+      <td>M</td>
+      <td>None</td>
+      <td>None</td>
+      <td>0.002484</td>
+      <td>278.254150</td>
+      <td>LINESTRING (-113.78484 42.54231, -113.78482 42...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>300004</td>
+      <td>329497</td>
+      <td>329504</td>
+      <td>16</td>
+      <td>063</td>
+      <td>16063</td>
+      <td>ID</td>
+      <td>US</td>
+      <td>8</td>
+      <td>...</td>
+      <td>None</td>
+      <td>M</td>
+      <td>0.447515</td>
+      <td>0.720207</td>
+      <td>M</td>
+      <td>DS</td>
+      <td>UP-DS</td>
+      <td>0.008412</td>
+      <td>982.887938</td>
+      <td>LINESTRING (-114.40776 42.93610, -114.40763 42...</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 39 columns</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Checking Cooridindate System.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a>
+</h2>
+<p>The coordinate system must be in the epsg 3857 format to overlay.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">line_df</span><span class="o">.</span><span class="n">crs</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>&lt;Geographic 2D CRS: EPSG:4326&gt;
+Name: WGS 84
+Axis Info [ellipsoidal]:
+- Lat[north]: Geodetic latitude (degree)
+- Lon[east]: Geodetic longitude (degree)
+Area of Use:
+- name: World.
+- bounds: (-180.0, -90.0, 180.0, 90.0)
+Datum: World Geodetic System 1984 ensemble
+- Ellipsoid: WGS 84
+- Prime Meridian: Greenwich
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Converting to EPSG 3857 System<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a>
+</h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">line_wm</span> <span class="o">=</span> <span class="n">line_df</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="plotting-every-rail-line-in-the-united-states-mexico-and-canada">
+<h2>Plotting Every Rail Line in the United States, Mexico, and Canada<a class="headerlink" href="#plotting-every-rail-line-in-the-united-states-mexico-and-canada" title="Permalink to this headline">¶</a>
+</h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">line_wm</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'k'</span><span class="p">,</span> <span class="n">markersize</span> <span class="o">=</span> <span class="mf">.5</span><span class="p">)</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/RailMapping_36_0.png" src="../../_images/RailMapping_36_0.png">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">line_wm</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>Index(['OBJECTID', 'FRAARCID', 'FRFRANODE', 'TOFRANODE', 'STFIPS', 'CNTYFIPS',
+       'STCNTYFIPS', 'STATEAB', 'COUNTRY', 'FRADISTRCT', 'RROWNER1',
+       'RROWNER2', 'RROWNER3', 'TRKRGHTS1', 'TRKRGHTS2', 'TRKRGHTS3',
+       'TRKRGHTS4', 'TRKRGHTS5', 'TRKRGHTS6', 'TRKRGHTS7', 'TRKRGHTS8',
+       'TRKRGHTS9', 'DIVISION', 'SUBDIV', 'BRANCH', 'YARDNAME', 'PASSNGR',
+       'STRACNET', 'TRACKS', 'CARDDIRECT', 'NET', 'MILES', 'KM', 'TIMEZONE',
+       'IM_RT_TYPE', 'DBLSTK', 'Shape_Leng', 'ShapeSTLen', 'geometry'],
+      dtype='object')
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate">
+<div class="highlight"><pre><span></span><span class="n">line_wm</span><span class="o">.</span><span class="n">STRACNET</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate">
+<div class="highlight"><pre><span></span>array([None, 'S', 'C'], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "finance"
+        },
+        kernelOptions: {
+            kernelName: "finance",
+            path: "./parts/freight"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    
+<script>kernelName = 'finance'</script>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="FreightRail.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">United States Freight Overview</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../contact/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Contact Justin Napolitano</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Justin Napolitano<br/>
+    
+        &copy; Copyright 2022, Justin Napolitano.<br/>
+      Last updated on Apr 02, 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
