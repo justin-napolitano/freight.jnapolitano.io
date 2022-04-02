@@ -73,8 +73,10 @@ extensions = [
     "hawkmoth",
 #    "sphinx_panels"
 ]
-
+jupyter_execute_notebooks = "auto"
+execution_timeout=-1
 nbsphinx_timeout = -1
+jupyter_execute_notebooks = "off"
 #Cautodoc Setup
 
 cautodoc_root = os.path.abspath("codebase/project-c-reference")

@@ -30,7 +30,7 @@
 # First one must import the libraries that will be used in this project.  
 # 
 
-# In[1]:
+# In[163]:
 
 
 import nasdaqdatalink as link
@@ -43,7 +43,7 @@ import pandas as pd
 # 
 # The ReturnData Class initializes an object that contains all of the information necesary to produce graphs and analyze data 
 
-# In[2]:
+# In[164]:
 
 
 class ReturnData():
@@ -60,7 +60,7 @@ class ReturnData():
 # The read_key function imports an api key from file to enable this project to interact with the Nasdaq Data Link.
 # 
 
-# In[3]:
+# In[165]:
 
 
 def read_key():
@@ -76,7 +76,7 @@ def read_key():
 # The get_data function calls the Nasdaq Data Link to request a data set dictionary according to a specified ticker(ie a data set title).
 # 
 
-# In[4]:
+# In[166]:
 
 
 def get_data(ticker):
@@ -89,7 +89,7 @@ def get_data(ticker):
 # The test function simply tests whether the api is functioning.  It returns a sample set of data for confirmation.
 # 
 
-# In[5]:
+# In[167]:
 
 
 def test():
@@ -100,7 +100,7 @@ def test():
         print(data)
 
 
-# In[6]:
+# In[168]:
 
 
 test()
@@ -111,7 +111,7 @@ test()
 # plot_df will plot a datframe object.  A ReturnObject as defined by the ReturnData class contains all necessary information to plot a graph.
 # 
 
-# In[7]:
+# In[169]:
 
 
 def plot_df(ReturnObject):
@@ -130,7 +130,7 @@ def plot_df(ReturnObject):
 # The GetData function is an improved version of the previous get_data function.  It will request information by ticker.  Then, create a pandas dataframe to facillitate data manipulation and analysis. Finally it creates a ReturnObject by calling the ReturndData class.  ReturnObject is returned to the calling pipeline function to be manipulated and plotted.
 # 
 
-# In[8]:
+# In[170]:
 
 
 def GetData(ticker,unit,title,xlabel):
@@ -152,7 +152,7 @@ def GetData(ticker,unit,title,xlabel):
 # GetCarbonDioxide data is an obsolete function that needs to be uodated to the new logic presented below.  In its current state it requires ticker, unit, title, ..etc to be defined within this function.  A better implementation is to do this step within the pipeline function.
 # 
 
-# In[9]:
+# In[171]:
 
 
 def GetCarbonDioxideData():
@@ -178,7 +178,7 @@ def GetCarbonDioxideData():
 # 
 # the CarbonPipeline Function creates the Carbon Dioxide usage reports by calling the GetCarbonDioxideData function and the plot_df utility function. 
 
-# In[10]:
+# In[172]:
 
 
 def CarbonPipeline():
@@ -192,7 +192,7 @@ def CarbonPipeline():
 # 
 # CPPCarbonPipeline is written with an improved logic to the CarbonPipeline function.  Attributes are set at the highest level instead of nesting the initialization within a secondary function.
 
-# In[11]:
+# In[173]:
 
 
 def CPPCarbonPipeline():
@@ -207,7 +207,7 @@ def CPPCarbonPipeline():
 # ### GetFuelEfficiency Function
 # GetFuelEfficiencyData is an obsolete function that needs to be uodated to the new logic presented below. In its current state it requires ticker, unit, title, ..etc to be defined within this function. A better implementation is to do this step within the pipeline function.
 
-# In[12]:
+# In[174]:
 
 
 def GetFuelEfficiencyData():
@@ -233,7 +233,7 @@ def GetFuelEfficiencyData():
 # 
 # the Efficiency Function creates the Carbon Dioxide usage reports by calling the GetCarbonDioxideData function and the plot_df utility function. 
 
-# In[13]:
+# In[175]:
 
 
 def EfficiencyPipeline():
@@ -247,7 +247,7 @@ def EfficiencyPipeline():
 # 
 # the LNGUsagePipeline  Function creates the LNG usage reports by calling the Get data function and the plot_df utility function. 
 
-# In[14]:
+# In[176]:
 
 
 def LngUsagePipeline():
@@ -264,7 +264,7 @@ def LngUsagePipeline():
 # 
 # the LNGUsagePipeline  Function creates the LNG usage reports by calling the Get data function and the plot_df utility function. 
 
-# In[15]:
+# In[177]:
 
 
 def FreightRailUsagePipeline():
@@ -280,7 +280,7 @@ def FreightRailUsagePipeline():
 # 
 # The FreightEnergyNoCPPPipeline Function creates the Freight Energy; No CPP; usage reports by calling the Get data function and the plot_df utility function. 
 
-# In[16]:
+# In[178]:
 
 
 def FreightEnergyNoCPPPipeline():
@@ -296,7 +296,7 @@ def FreightEnergyNoCPPPipeline():
 # 
 # The TonMilesPipeline Function creates the Ton Miles usage reports by calling the Get data function and the plot_df utility function. 
 
-# In[17]:
+# In[179]:
 
 
 def TonMilesPipeline():
@@ -314,43 +314,43 @@ def TonMilesPipeline():
 # 
 # It easy to add new reports to the project because the programs are written modularly. 
 
-# In[18]:
+# In[180]:
 
 
 CarbonPipeline()
 
 
-# In[19]:
+# In[181]:
 
 
 CPPCarbonPipeline()
 
 
-# In[20]:
+# In[182]:
 
 
 EfficiencyPipeline()
 
 
-# In[21]:
+# In[183]:
 
 
 LngUsagePipeline()
 
 
-# In[22]:
+# In[184]:
 
 
 FreightRailUsagePipeline()
 
 
-# In[23]:
+# In[185]:
 
 
 FreightEnergyNoCPPPipeline()
 
 
-# In[24]:
+# In[186]:
 
 
 TonMilesPipeline()
