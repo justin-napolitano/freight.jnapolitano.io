@@ -19,13 +19,13 @@ title: Justin Napolitano
 
 ```{toctree}
 :caption: Overview
-:maxdepth: 2
+:maxdepth: 3
 
 parts/freight/FreightRail.ipynb
 ```
 :::
 
-## Rail 
+## Rail Freight
 
 :::{raw} html
 
@@ -36,7 +36,7 @@ parts/freight/FreightRail.ipynb
 
 ```{toctree}
 :caption: Rail
-:maxdepth: 2
+:maxdepth: 3
 
 parts/freight/Rail.ipynb
 ```
@@ -53,13 +53,13 @@ parts/freight/Rail.ipynb
 
 ```{toctree}
 :caption: US Shipping Routes and Ports
-:maxdepth: 2
+:maxdepth: 3
 
 parts/freight/Shipping.md
 ```
 :::
 
-## Intermodal Freight Stations
+## Intermodal Freight 
 
 :::{raw} html
 
@@ -70,7 +70,7 @@ parts/freight/Shipping.md
 
 ```{toctree}
 :caption: US Intermodal Shipping
-:maxdepth: 2
+:maxdepth: 3
 
 parts/freight/intermodal.md
 ```
@@ -87,7 +87,7 @@ parts/freight/intermodal.md
 
 ```{toctree}
 :caption: Freight Network Analysis
-:maxdepth: 2
+:maxdepth: 3
 
 parts/freight/us_network.ipynb
 ```
@@ -105,7 +105,7 @@ parts/freight/us_network.ipynb
 
 ```{toctree}
 :caption: Contact
-:maxdepth: 2
+:maxdepth: 3
 
 parts/contact/index
 ```
@@ -125,7 +125,7 @@ parts/contact/index
 
 ```{toctree}
 :caption: Tables and Indices
-:maxdepth: 2
+:maxdepth: 3
 
 genindex
 ```

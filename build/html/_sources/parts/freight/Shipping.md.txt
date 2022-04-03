@@ -13,16 +13,12 @@ kernelspec:
 
 # US Shipping Routes and Ports Analysis
 
-## About
-
-Exploring the US Shipping Dataset 
 
 This is a precursor project to one that will create a graph of rail, shipping, trucking, and air freight transport networks for analysis. 
 
 
 +++
 
-## Import Functions
 
 ```{code-cell} ipython3
 import pandas as pd
@@ -32,7 +28,7 @@ import folium
 import contextily as cx
 ```
 
-## Reading Node Shape Data into DF
+## Data
  
 
 ```{code-cell} ipython3
@@ -45,7 +41,7 @@ waterway_df = gpd.read_file(gisfilepath)
 waterway_df.head()
 ```
 
-## Checking Cooridindate System.  
+### Checking Cooridindate System.  
 
 The coordinate system must be in the epsg 3857 format to overlay.
 
@@ -53,7 +49,7 @@ The coordinate system must be in the epsg 3857 format to overlay.
 waterway_df.crs
 ```
 
-### Converting to EPSG 3857 System 
+#### Converting to EPSG 3857 System 
 
 
 ```{code-cell} ipython3
@@ -65,13 +61,13 @@ ax = df_wm.plot(figsize=(20, 20), alpha=0.5, edgecolor='k')
 cx.add_basemap(ax, zoom=4)
 ```
 
-### First Impressions of the Data
+### Impressions
 
 The Gulf Waters are interestengly concentrated and dependent on non US Ports.  For instance the Gulf-Carribean Access Point concentrates near the Yucatan penninsula.  There is also a major concentration near the islands of cuba and hispanola. This surpise me I would have considered Puerto Rico to be a more important shipping route.  
 
 +++
 
-## Exploring US Ports Data Set
+## US Ports Data Set
 
 ```{code-cell} ipython3
 gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Ports.geojson"
@@ -85,12 +81,12 @@ ports_df
 ports_df.columns
 ```
 
-### Initial Impressions.  
+### Impressions
 There are 24,1117 ports recorded in this dataset.  There are also 43 fields of data.  Columns of interests are Highway_No and Railway_No.  I would like to investigate this further.  
 
 +++
 
-### Converting to EPSG 3857 System 
+#### Converting to EPSG 3857 System 
 
 
 ```{code-cell} ipython3
@@ -114,7 +110,7 @@ It is interesting to see all of the ports in the UNited States, but I notice tha
 
 +++
 
-## Filtering only for Major US Ports
+## Major US Ports Data Set
 
 ```{code-cell} ipython3
 gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Major_Ports.geojson"
@@ -128,7 +124,7 @@ major_ports_df
 major_ports_df.columns
 ```
 
-### Initial Impressions
+### Impressions
 
 This data is far more managable.  It also contains data relating to freight volumes.  
 

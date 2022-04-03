@@ -11,7 +11,7 @@ kernelspec:
   name: finance
 ---
 
-# Analzying Intermodal Connections in the United States Supply Chain.
+# Intermodal Freight Analysis.
 
 ```{code-cell} ipython3
 
@@ -50,14 +50,14 @@ roll_on_off_df
 roll_on_off_df.explore()
 ```
 
-## Intermodal Raile Freight Stations
+## Intermodal Rail Freight Stations
 
-### Source 
+### Data Source 
 
 https://geo.dot.gov/server/rest/services/NTAD/Intermodal_Freight_Facilities_RailTOFCCOFC/MapServer/0
 
 
-### Contained within the Dataset
+### Data Values
 
 Every facility is assumed to be served by both rail and truck, and those facilities which support port operations, the name of the port is also identified
 

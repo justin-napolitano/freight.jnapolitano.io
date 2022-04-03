@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Mapping the US Logistics Network 
+# # US Logistics Network Analysis
 
 # In[1]:
 
@@ -15,7 +15,7 @@ import contextily as cx
 import rtree
 
 
-# ## Categorizing Rail Facilities by Nearest Ports
+# ## Rail Facilities by Nearest Ports
 
 # ### Intermodal Rail Data
 
@@ -56,7 +56,7 @@ print(major_transit_nodes.columns)
 major_transit_nodes
 
 
-# ### Mapping Intermodal Rail Facilities Categorized by Major Ports
+# ### Rail Facilities by Port Interactive Map
 # 
 
 # In[5]:
@@ -65,7 +65,7 @@ major_transit_nodes
 major_transit_nodes.explore()
 
 
-# ## Air Freight to Truck Facilites Categorized by Major Port
+# ## Air Freight to Truck Facilites by Major Port
 
 # In[6]:
 
@@ -90,7 +90,7 @@ print(major_air_freight.columns)
 major_air_freight
 
 
-# ### Mapping Air Freight Hubs Categorized by Nearest Major Port Port
+# ### Air Freight Hubs by Nearest Major Port Port Map
 
 # In[8]:
 
@@ -98,7 +98,7 @@ major_air_freight
 major_air_freight.explore()
 
 
-# ## Overlaying Shipping Networks
+# ## Shipping Networks
 
 # ### Shipping Data
 
@@ -112,7 +112,7 @@ shipping_network = shipping_network.to_crs(epsg=3857)
 shipping_network
 
 
-# ### Calculating Major Port for Node in Shipping Network
+# ### Shipping Networks by Major Ports
 
 # In[10]:
 

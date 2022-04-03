@@ -3,15 +3,11 @@
 
 # # Rail Analysis
 # 
-# ## About
-# 
 # Mapping Rail Lines and Rail Nodes in the United States.  
 # 
 # This is a precursor project to one that will create a graph of rail, shipping, trucking, and air freight transport networks for analysis. 
 # 
 # 
-
-# ## Import Functions
 
 # In[1]:
 
@@ -64,7 +60,7 @@ line_df.crs
 line_wm = line_df.to_crs(epsg=3857)
 
 
-# ## Plotting Every Rail Line in the United States, Mexico, and Canada
+# ## Plotting Rail Lines in the United States, Mexico, and Canada
 
 # In[5]:
 
@@ -73,7 +69,7 @@ ax = line_wm.plot(figsize=(10, 10), alpha=0.5, edgecolor='k', markersize = .5)
 cx.add_basemap(ax, zoom=4)
 
 
-# ### Printing Data Fields
+# ### Data Fields
 
 # In[6]:
 
@@ -81,14 +77,14 @@ cx.add_basemap(ax, zoom=4)
 line_wm.columns
 
 
-# ### Creating a Map of Texas Rail Lines
+# ## Map of Texas Rail Lines
 # 
 # Texas is an important freight destination.  The state possess many natural important ports and freight stations.  
 # 
 # 
 # 
 
-# #### Filtering the data set for Texas state Lines.
+# ### Filtering the data set for Texas state Lines.
 # 
 # FIPS codes can be found at https://www.nrcs.usda.gov/wps/portal/nrcs/detail/?cid=nrcs143_013696
 # 
@@ -106,7 +102,7 @@ texas_lines_df = line_wm.loc[line_wm['STFIPS'] == '48']
 #print(texas_lines_df)
 
 
-# #### Mapping Texas Non-Interactive
+# ### Texas Non-Interactive Map
 
 # In[8]:
 
@@ -115,7 +111,7 @@ ax = texas_lines_df.plot(figsize=(10, 10), alpha=0.5, edgecolor='k', markersize 
 cx.add_basemap(ax, zoom=6)
 
 
-# ### Plotting an interactive Map.
+# ### Interactive Map.
 
 # In[9]:
 
