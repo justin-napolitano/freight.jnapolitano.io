@@ -8,7 +8,7 @@
   <meta property="og:title" content="freight.jnapolitano.io" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="index.html" />
-  <meta property="og:description" content="Overview: Overview: United States Freight Overview- About, Code Section, Data Plots.. Rail: Rail: Rail Analysis- About, Import Functions, Rail Line Dataset Analysis, Plotting Every Rail Line in the..." />
+  <meta property="og:description" content="Overview: Overview: United States Freight Overview- About- Next Steps, To Do., Code Section- Import Statements, ReturnData Class, read_key Function, get_data Function, Test Function, plot_df Functi..." />
   
     <title>freight.jnapolitano.io &#8212; freight.jnapolitano.io</title>
     
@@ -181,7 +181,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="parts/freight/intermodal.html">
-   Analzying Intermodal Connections in the United States Supply Chain.
+   Intermodal Freight Analysis.
   </a>
  </li>
 </ul>
@@ -193,7 +193,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="parts/freight/us_network.html">
-   Mapping the US Logistics Network
+   US Logistics Network Analysis
   </a>
  </li>
 </ul>
@@ -310,8 +310,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rail">
-   Rail
+  <a class="reference internal nav-link" href="#rail-freight">
+   Rail Freight
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -320,8 +320,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intermodal-freight-stations">
-   Intermodal Freight Stations
+  <a class="reference internal nav-link" href="#intermodal-freight">
+   Intermodal Freight
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -365,8 +365,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rail">
-   Rail
+  <a class="reference internal nav-link" href="#rail-freight">
+   Rail Freight
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -375,8 +375,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intermodal-freight-stations">
-   Intermodal Freight Stations
+  <a class="reference internal nav-link" href="#intermodal-freight">
+   Intermodal Freight
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -417,8 +417,32 @@
 <ul>
 <li class="toctree-l1">
 <a class="reference internal" href="parts/freight/FreightRail.html">United States Freight Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/FreightRail.html#about">About</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/FreightRail.html#code-section">Code Section</a></li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/FreightRail.html#about">About</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#next-steps">Next Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#to-do">To Do</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/FreightRail.html#code-section">Code Section</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#import-statements">Import Statements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#returndata-class">ReturnData Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#read-key-function">read_key Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#get-data-function">get_data Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#test-function">Test Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#plot-df-function">plot_df Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#getdata-function">GetData Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#getcarbondioxidedata-function">GetCarbonDioxideData Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#carbonpipeline-function">CarbonPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#cppcarbonpipeline-function">CPPCarbonPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#getfuelefficiency-function">GetFuelEfficiency Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#efficiencypipeline-function">EfficiencyPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#lngusagepipeline-function">LNGUsagePipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#freightrailusagepipeline-function">FreightRailUsagePipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#freightenergynocpppipeline-function">FreightEnergyNoCPPPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#tonmilespipeline-function">TonMilesPipeline Function</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="parts/freight/FreightRail.html#data-plots">Data Plots</a></li>
 </ul>
 </li>
@@ -427,8 +451,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="rail">
-<h2>Rail<a class="headerlink" href="#rail" title="Permalink to this headline">¶</a>
+<div class="section" id="rail-freight">
+<h2>Rail Freight<a class="headerlink" href="#rail-freight" title="Permalink to this headline">¶</a>
 </h2>
     <hr style="height:1px;border-width:0;color:gray;background-color:gray">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -438,10 +462,25 @@
 <ul>
 <li class="toctree-l1">
 <a class="reference internal" href="parts/freight/Rail.html">Rail Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Rail.html#about">About</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Rail.html#import-functions">Import Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Rail.html#rail-line-dataset-analysis">Rail Line Dataset Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Rail.html#plotting-every-rail-line-in-the-united-states-mexico-and-canada">Plotting Every Rail Line in the United States, Mexico, and Canada</a></li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/Rail.html#rail-line-dataset-analysis">Rail Line Dataset Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#loading-the-rail-line-data">Loading the Rail Line Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#checking-cooridindate-system">Checking Cooridindate System.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#converting-to-epsg-3857-system">Converting to EPSG 3857 System</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/Rail.html#plotting-rail-lines-in-the-united-states-mexico-and-canada">Plotting Rail Lines in the United States, Mexico, and Canada</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#data-fields">Data Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/Rail.html#map-of-texas-rail-lines">Map of Texas Rail Lines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#filtering-the-data-set-for-texas-state-lines">Filtering the data set for Texas state Lines.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#texas-non-interactive-map">Texas Non-Interactive Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#interactive-map">Interactive Map.</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -460,12 +499,25 @@
 <ul>
 <li class="toctree-l1">
 <a class="reference internal" href="parts/freight/Shipping.html">US Shipping Routes and Ports Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Shipping.html#about">About</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Shipping.html#import-functions">Import Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Shipping.html#reading-node-shape-data-into-df">Reading Node Shape Data into DF</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Shipping.html#checking-cooridindate-system">Checking Cooridindate System.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Shipping.html#exploring-us-ports-data-set">Exploring US Ports Data Set</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/Shipping.html#filtering-only-for-major-us-ports">Filtering only for Major US Ports</a></li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/Shipping.html#data">Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#checking-cooridindate-system">Checking Cooridindate System.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#impressions">Impressions</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/Shipping.html#us-ports-data-set">US Ports Data Set</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#id1">Impressions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#interactive-ports-map">Interactive Ports Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#results">Results</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/Shipping.html#major-us-ports-data-set">Major US Ports Data Set</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#id3">Impressions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/Shipping.html#interactive-major-ports-map">Interactive Major Ports Map</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -473,8 +525,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="intermodal-freight-stations">
-<h2>Intermodal Freight Stations<a class="headerlink" href="#intermodal-freight-stations" title="Permalink to this headline">¶</a>
+<div class="section" id="intermodal-freight">
+<h2>Intermodal Freight<a class="headerlink" href="#intermodal-freight" title="Permalink to this headline">¶</a>
 </h2>
     <hr style="height:1px;border-width:0;color:gray;background-color:gray">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -483,11 +535,20 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">US Intermodal Shipping</span></p>
 <ul>
 <li class="toctree-l1">
-<a class="reference internal" href="parts/freight/intermodal.html">Analzying Intermodal Connections in the United States Supply Chain.</a><ul>
+<a class="reference internal" href="parts/freight/intermodal.html">Intermodal Freight Analysis.</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#air-to-truck-facillities">Air to Truck Facillities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#intermodal-freight-marine-role-on-role-off">Intermodal Freight Marine Role On/Role Off</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#intermodal-raile-freight-stations">Intermodal Raile Freight Stations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#conclusions">Conclusions</a></li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/intermodal.html#intermodal-rail-freight-stations">Intermodal Rail Freight Stations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/intermodal.html#data-source">Data Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/intermodal.html#data-values">Data Values</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/intermodal.html#conclusions">Conclusions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/intermodal.html#regulatory-considerations">Regulatory Considerations</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -505,10 +566,27 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Freight Network Analysis</span></p>
 <ul>
 <li class="toctree-l1">
-<a class="reference internal" href="parts/freight/us_network.html">Mapping the US Logistics Network</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/us_network.html#categorizing-rail-facilities-by-nearest-ports">Categorizing Rail Facilities by Nearest Ports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/us_network.html#air-freight-to-truck-facilites-categorized-by-major-port">Air Freight to Truck Facilites Categorized by Major Port</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/us_network.html#overlaying-shipping-networks">Overlaying Shipping Networks</a></li>
+<a class="reference internal" href="parts/freight/us_network.html">US Logistics Network Analysis</a><ul>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/us_network.html#rail-facilities-by-nearest-ports">Rail Facilities by Nearest Ports</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#intermodal-rail-data">Intermodal Rail Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#major-ports-data">Major Ports Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#intermodal-rail-stations-joined-by-nearest-major-port">Intermodal Rail Stations Joined by Nearest Major Port</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#rail-facilities-by-port-interactive-map">Rail Facilities by Port Interactive Map</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/us_network.html#air-freight-to-truck-facilites-by-major-port">Air Freight to Truck Facilites by Major Port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#air-freight-hubs-joined-by-major-ports">Air Freight Hubs joined by Major Ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#air-freight-hubs-by-nearest-major-port-port-map">Air Freight Hubs by Nearest Major Port Port Map</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/us_network.html#shipping-networks">Shipping Networks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#shipping-data">Shipping Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/us_network.html#shipping-networks-by-major-ports">Shipping Networks by Major Ports</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
