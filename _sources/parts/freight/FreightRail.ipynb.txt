@@ -24,11 +24,10 @@
     "\n",
     "* Rewrite some of the pipline functions to be more elegant.\n",
     "* Find more interesting data to plot\n",
-    "* Identify rail transit locations across the united states. \n",
-    "* Identify air transit locations across the united states. \n",
-    "* Identify truck transit locations across the united states. \n",
-    "* Identify shipping ports across the united states.\n",
-    "* Discover overlap.  Ie where the transit hubs are located to identify major bottlenecks.  \n"
+    "* Identify rail transit locations across the united states: Completd\n",
+    "* Identify air transit locations across the united states: Completed\n",
+    "* Identify truck transit locations across the united states: Completed\n",
+    "* Identify shipping ports across the united states: Completed\n"
    ]
   },
   {
@@ -38,7 +37,7 @@
    "source": [
     "## Code Section\n",
     "\n",
-    "In order to create rigorous tools that will influence business decisions it is important to me to remain completely transparent.  Every graph, table, and test will be easy to generate by running the code included with this document.  "
+    "In order to create rigorous tools that will influence business decisions it is important to me to remain completely transparent.  Every graph, table, and test will be easy to replicate by running the code included with this document.  "
    ]
   },
   {
@@ -48,7 +47,7 @@
    "source": [
     "### Import Statements\n",
     "\n",
-    "First one must import the libraries that will be used in this project.  \n"
+    "First import the libraries that will be used in this project.  \n"
    ]
   },
   {
@@ -522,7 +521,7 @@
    "id": "ad6193c5",
    "metadata": {},
    "source": [
-    "## Plotting Functions\n",
+    "## Data Plots\n",
     "\n",
     "The functions below plot data by calling the appropriate pipeline.  \n",
     "\n",
