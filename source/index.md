@@ -21,7 +21,7 @@ title: Justin Napolitano
 :caption: Overview
 :maxdepth: 3
 
-parts/freight/FreightRail.ipynb
+parts/freight/overview.md
 ```
 :::
 
@@ -39,6 +39,7 @@ parts/freight/FreightRail.ipynb
 :maxdepth: 3
 
 parts/freight/Rail.ipynb
+parts/freight/FreightEnergy.ipynb
 ```
 :::
 

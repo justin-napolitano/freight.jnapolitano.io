@@ -22,7 +22,7 @@ import folium
 import contextily as cx
 ```
 
-## Air to Truck Facillities
+## Air to Truck Facilities
 
 ```{code-cell} ipython3
 gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/intermodal/Intermodal_Freight_Facilities_Air-to-Truck.geojson"
@@ -31,7 +31,7 @@ air_to_truck_df = gpd.read_file(gisfilepath)
 
 air_to_truck_df
 ```
-
+## Air to Truck Facility Map
 ```{code-cell} ipython3
 air_to_truck_df.explore()
 ```
@@ -45,6 +45,8 @@ roll_on_off_df = gpd.read_file(gisfilepath)
 
 roll_on_off_df
 ```
+
+## Marine Roll on/Role Off Map
 
 ```{code-cell} ipython3
 roll_on_off_df.explore()
@@ -68,6 +70,8 @@ rail_to_all_df = gpd.read_file(gisfilepath)
 
 rail_to_all_df
 ```
+
+### Rail Freight Stations Map
 
 ```{code-cell} ipython3
 rail_to_all_df.explore()

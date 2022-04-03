@@ -8,7 +8,7 @@
   <meta property="og:title" content="freight.jnapolitano.io" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="index.html" />
-  <meta property="og:description" content="Overview: Overview: United States Freight Overview- About- Next Steps, To Do., Code Section- Import Statements, ReturnData Class, read_key Function, get_data Function, Test Function, plot_df Functi..." />
+  <meta property="og:description" content="Overview: Overview: United States Freight Overview- About, Next Steps, To Do.. Rail Freight: Rail: Rail Analysis- Rail Line Dataset Analysis- Loading the Rail Line Data, Checking Cooridindate Syste..." />
   
     <title>freight.jnapolitano.io &#8212; freight.jnapolitano.io</title>
     
@@ -58,7 +58,7 @@
     <link rel="shortcut icon" href="_static/FAVICON.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="United States Freight Overview" href="parts/freight/FreightRail.html" /> 
+    <link rel="next" title="United States Freight Overview" href="parts/freight/overview.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -144,7 +144,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="parts/freight/FreightRail.html">
+  <a class="reference internal" href="parts/freight/overview.html">
    United States Freight Overview
   </a>
  </li>
@@ -158,6 +158,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="parts/freight/Rail.html">
    Rail Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="parts/freight/FreightEnergy.html">
+   United States Rail Freight Energy Usage
   </a>
  </li>
 </ul>
@@ -416,34 +421,10 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1">
-<a class="reference internal" href="parts/freight/FreightRail.html">United States Freight Overview</a><ul>
-<li class="toctree-l2">
-<a class="reference internal" href="parts/freight/FreightRail.html#about">About</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#next-steps">Next Steps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#to-do">To Do</a></li>
-</ul>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="parts/freight/FreightRail.html#code-section">Code Section</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#import-statements">Import Statements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#returndata-class">ReturnData Class</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#read-key-function">read_key Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#get-data-function">get_data Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#test-function">Test Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#plot-df-function">plot_df Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#getdata-function">GetData Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#getcarbondioxidedata-function">GetCarbonDioxideData Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#carbonpipeline-function">CarbonPipeline Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#cppcarbonpipeline-function">CPPCarbonPipeline Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#getfuelefficiency-function">GetFuelEfficiency Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#efficiencypipeline-function">EfficiencyPipeline Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#lngusagepipeline-function">LNGUsagePipeline Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#freightrailusagepipeline-function">FreightRailUsagePipeline Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#freightenergynocpppipeline-function">FreightEnergyNoCPPPipeline Function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightRail.html#tonmilespipeline-function">TonMilesPipeline Function</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/FreightRail.html#data-plots">Data Plots</a></li>
+<a class="reference internal" href="parts/freight/overview.html">United States Freight Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="parts/freight/overview.html#about">About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parts/freight/overview.html#next-steps">Next Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parts/freight/overview.html#to-do">To Do</a></li>
 </ul>
 </li>
 </ul>
@@ -479,6 +460,41 @@
 <li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#filtering-the-data-set-for-texas-state-lines">Filtering the data set for Texas state Lines.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#texas-non-interactive-map">Texas Non-Interactive Map</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parts/freight/Rail.html#interactive-map">Interactive Map.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="parts/freight/FreightEnergy.html">United States Rail Freight Energy Usage</a><ul>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/FreightEnergy.html#code-section">Code Section</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#import-statements">Import Statements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#returndata-class">ReturnData Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#read-key-function">read_key Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#get-data-function">get_data Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#test-function">Test Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#plot-df-function">plot_df Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#getdata-function">GetData Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#getcarbondioxidedata-function">GetCarbonDioxideData Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#carbonpipeline-function">CarbonPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#cppcarbonpipeline-function">CPPCarbonPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#getfuelefficiency-function">GetFuelEfficiency Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#efficiencypipeline-function">EfficiencyPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#lngusagepipeline-function">LNGUsagePipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#freightrailusagepipeline-function">FreightRailUsagePipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#freightenergynocpppipeline-function">FreightEnergyNoCPPPipeline Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#tonmilespipeline-function">TonMilesPipeline Function</a></li>
+</ul>
+</li>
+<li class="toctree-l2">
+<a class="reference internal" href="parts/freight/FreightEnergy.html#data-plots">Data Plots</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#carbon-production-projects">Carbon Production Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#carbon-dioxide-projects">Carbon Dioxide Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#freight-fuel-efficiency-projections">Freight Fuel Efficiency Projections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#lng-usage-and-projections">LNG Usage and Projections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#rail-freight-total-energy-use">Rail Freight Total Energy Use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#projected-energy-usage-without-carbon-protection-policies">Projected Energy Usage without Carbon Protection Policies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/FreightEnergy.html#ton-miles-projections">Ton/Miles Projections</a></li>
 </ul>
 </li>
 </ul>
@@ -536,12 +552,15 @@
 <ul>
 <li class="toctree-l1">
 <a class="reference internal" href="parts/freight/intermodal.html">Intermodal Freight Analysis.</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#air-to-truck-facillities">Air to Truck Facillities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#air-to-truck-facilities">Air to Truck Facilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#air-to-truck-facility-map">Air to Truck Facility Map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#intermodal-freight-marine-role-on-role-off">Intermodal Freight Marine Role On/Role Off</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parts/freight/intermodal.html#marine-roll-on-role-off-map">Marine Roll on/Role Off Map</a></li>
 <li class="toctree-l2">
 <a class="reference internal" href="parts/freight/intermodal.html#intermodal-rail-freight-stations">Intermodal Rail Freight Stations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="parts/freight/intermodal.html#data-source">Data Source</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parts/freight/intermodal.html#data-values">Data Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parts/freight/intermodal.html#rail-freight-stations-map">Rail Freight Stations Map</a></li>
 </ul>
 </li>
 <li class="toctree-l2">
@@ -657,7 +676,7 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="parts/freight/FreightRail.html" title="next page">
+    <a class='right-next' id="next-link" href="parts/freight/overview.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">United States Freight Overview</p>
