@@ -13,7 +13,7 @@ import folium
 import contextily as cx
 
 
-# ## Air to Truck Facilities
+# ## Air to Truck Facilities Data
 
 # In[2]:
 
@@ -25,7 +25,7 @@ air_to_truck_df = gpd.read_file(gisfilepath)
 air_to_truck_df
 
 
-# ## Air to Truck Facility Map
+# ### Air to Truck Facility Map
 
 # In[3]:
 
@@ -33,7 +33,7 @@ air_to_truck_df
 air_to_truck_df.explore()
 
 
-# ## Intermodal Freight Marine Role On/Role Off
+# ## Intermodal Freight Marine Role On/Role Off Data
 
 # In[4]:
 
@@ -45,7 +45,7 @@ roll_on_off_df = gpd.read_file(gisfilepath)
 roll_on_off_df
 
 
-# ## Marine Roll on/Role Off Map
+# ### Marine Roll on/Role Off Map
 
 # In[5]:
 
@@ -53,7 +53,7 @@ roll_on_off_df
 roll_on_off_df.explore()
 
 
-# ## Intermodal Rail Freight Stations
+# ## Intermodal Rail Freight Stations Data
 # 
 # ### Data Source 
 # 
