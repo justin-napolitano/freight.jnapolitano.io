@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Mapping and Analzying Intermodal Connections in the United States Supply Chain.
+# # Analzying Intermodal Connections in the United States Supply Chain.
 
 # In[1]:
 
@@ -49,7 +49,7 @@ roll_on_off_df
 roll_on_off_df.explore()
 
 
-# ## True Intermodal Freight Stations
+# ## Intermodal Raile Freight Stations
 # 
 # ### Source 
 # 
@@ -80,6 +80,6 @@ rail_to_all_df.explore()
 # 
 # Concentrate industrial activity in Texas because if its massive rail and shipping infrastructure or along a major water way. 
 # 
-# #### Regulatory Considerations
+# ### Regulatory Considerations
 # 
 # Rust Belt States and Northern states along the Mississippi with access to rail and internal shipping routes may face greater regulatory pressures than states such as Texas or Tennessee.  An investigation into this must be completed.

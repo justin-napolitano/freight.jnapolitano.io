@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Mapping US Shipping Routes and Ports
+# # US Shipping Routes and Ports Analysis
 # 
 # ## About
 # 
@@ -21,7 +21,7 @@ import folium
 import contextily as cx
 
 
-# ## Reading Node Shape Data into gpd DF
+# ## Reading Node Shape Data into DF
 
 # In[2]:
 
@@ -64,7 +64,7 @@ cx.add_basemap(ax, zoom=4)
 # 
 # The Gulf Waters are interestengly concentrated and dependent on non US Ports.  For instance the Gulf-Carribean Access Point concentrates near the Yucatan penninsula.  There is also a major concentration near the islands of cuba and hispanola. This surpise me I would have considered Puerto Rico to be a more important shipping route.
 
-# ## Exploring US Ports
+# ## Exploring US Ports Data Set
 
 # In[6]:
 
@@ -82,7 +82,7 @@ ports_df
 ports_df.columns
 
 
-# #### Initial Impressions.  
+# ### Initial Impressions.  
 # There are 24,1117 ports recorded in this dataset.  There are also 43 fields of data.  Columns of interests are Highway_No and Railway_No.  I would like to investigate this further.
 
 # ### Converting to EPSG 3857 System
@@ -100,7 +100,7 @@ ax = ports_df_wm.plot(figsize=(20, 20), alpha=0.5, edgecolor='k')
 cx.add_basemap(ax, zoom=4)
 
 
-# ## Interactive Ports Map
+# ### Interactive Ports Map
 
 # In[10]:
 
@@ -140,7 +140,7 @@ major_ports_df.columns
 major_ports_df_wm = major_ports_df.to_crs(epsg=3857)
 
 
-# ### Interactive Ports Map
+# ### Interactive Major Ports Map
 
 # In[14]:
 

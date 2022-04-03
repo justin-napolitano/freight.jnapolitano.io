@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Mapping the US Logistics Network 
+
 # In[1]:
 
 
@@ -13,9 +15,9 @@ import contextily as cx
 import rtree
 
 
-# # Mapping the entire US Logistics Network 
+# ## Categorizing Rail Facilities by Nearest Ports
 
-# ## Intermodal Freight Locations near Major US Ports
+# ### Intermodal Rail Data
 
 # In[2]:
 
@@ -31,6 +33,8 @@ rail_to_all_df = rail_to_all_df.to_crs(epsg=3857)
 rail_to_all_df
 
 
+# ### Major Ports Data
+
 # In[3]:
 
 
@@ -41,18 +45,29 @@ major_ports_df = major_ports_df.to_crs(epsg=3857)
 major_ports_df
 
 
-# ### Mapping Rail/Truck/Shipping Facilities Near to Major Ports in the United States
+# ### Intermodal Rail Stations Joined by Nearest Major Port
 
 # In[4]:
 
 
 major_transit_nodes = rail_to_all_df.sjoin_nearest(major_ports_df)
+major_transit_nodes.drop(columns=['OBJECTID_right', 'index_right','OBJECTID_1','OBJECTID_left','PORT_left'], inplace=True)
+print(major_transit_nodes.columns)
+major_transit_nodes
+
+
+# ### Mapping Intermodal Rail Facilities Categorized by Major Ports
+# 
+
+# In[5]:
+
+
 major_transit_nodes.explore()
 
 
-# ## Air Freight to Truck Facilities Near Major Ports
+# ## Air Freight to Truck Facilites Categorized by Major Port
 
-# In[5]:
+# In[6]:
 
 
 gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/intermodal/Intermodal_Freight_Facilities_Air-to-Truck.geojson"
@@ -62,21 +77,56 @@ air_freight_to_truck_df = air_freight_to_truck_df.to_crs(epsg=3857)
 air_freight_to_truck_df
 
 
-# ### Calculating Air Freight Hubs Near Major Ports
-
-# In[6]:
-
-
-major_air_freight = air_freight_to_truck_df.sjoin_nearest(major_ports_df)
-major_air_freight
-
-
-# ### Mapping Air Freight Hubs with Access to a Port
+# ### Air Freight Hubs joined by Major Ports
 
 # In[7]:
 
 
+major_air_freight = air_freight_to_truck_df.sjoin_nearest(major_ports_df)
+
+major_air_freight.drop(columns=['OBJECTID_right', 'index_right','OBJECTID_1','OBJECTID_left'], inplace=True)
+print(major_air_freight.columns)
+
+major_air_freight
+
+
+# ### Mapping Air Freight Hubs Categorized by Nearest Major Port Port
+
+# In[8]:
+
+
 major_air_freight.explore()
+
+
+# ## Overlaying Shipping Networks
+
+# ### Shipping Data
+
+# In[9]:
+
+
+gisfilepath = "//Users/jnapolitano/Projects/rail-mapping/shipping/Navigable_Waterway_Lines.geojson"
+shipping_network = gpd.read_file(gisfilepath)
+shipping_network = shipping_network.to_crs(epsg=3857)
+
+shipping_network
+
+
+# ### Calculating Major Port for Node in Shipping Network
+
+# In[10]:
+
+
+port_shipping = shipping_network.sjoin_nearest(major_ports_df)
+port_shipping.drop(columns = ['OBJECTID_left','DIR', 'ANODE', 'BNODE', 'ID_left', 'AMILE', 'BMILE', 'LENGTH1', 'LENGTH_SRC', 'SHAPE_SRC', 'GEO_CLASS', 'FUNC_CLASS','OBJECTID_1','CHART_ID', 'index_right', 'NUM_PAIRS', 'CHART_ID', 'DATE_MOD', 'WHO_MOD', 'OBJECTID_right','ID_right'],inplace=True)
+print(port_shipping.columns)
+port_shipping
+
+
+# In[11]:
+
+
+port_shipping.explore()
 
 
 # In[ ]:

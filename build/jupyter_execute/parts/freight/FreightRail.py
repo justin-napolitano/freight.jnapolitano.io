@@ -14,20 +14,19 @@
 # 
 # * Rewrite some of the pipline functions to be more elegant.
 # * Find more interesting data to plot
-# * Identify rail transit locations across the united states. 
-# * Identify air transit locations across the united states. 
-# * Identify truck transit locations across the united states. 
-# * Identify shipping ports across the united states.
-# * Discover overlap.  Ie where the transit hubs are located to identify major bottlenecks.  
+# * Identify rail transit locations across the united states: Completd
+# * Identify air transit locations across the united states: Completed
+# * Identify truck transit locations across the united states: Completed
+# * Identify shipping ports across the united states: Completed
 # 
 
 # ## Code Section
 # 
-# In order to create rigorous tools that will influence business decisions it is important to me to remain completely transparent.  Every graph, table, and test will be easy to generate by running the code included with this document.  
+# In order to create rigorous tools that will influence business decisions it is important to me to remain completely transparent.  Every graph, table, and test will be easy to replicate by running the code included with this document.  
 
 # ### Import Statements
 # 
-# First one must import the libraries that will be used in this project.  
+# First import the libraries that will be used in this project.  
 # 
 
 # In[1]:
@@ -308,7 +307,7 @@ def TonMilesPipeline():
     plotted = plot_df(LNGObject)
 
 
-# ## Plotting Functions
+# ## Data Plots
 # 
 # The functions below plot data by calling the appropriate pipeline.  
 # 

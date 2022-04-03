@@ -1,7 +1,7 @@
 #!/bin/zsh
 #build and deploy script
 pid=$!
-cname=cv.jnapolitano.io
+cname=freight.jnapolitano.io
 RED='\033[0;31m'
 PINK='\033[38;5;206m'
 PURPLE='\033[1;95m'
@@ -117,5 +117,5 @@ clean-gh-pages () {
     printf "\n Cleaning gh-pages now"
     checkout && remove_all && add && commit && push && checkout_main
 }
-clean && html && add && commit && push && clean-gh-pages && deploy
+add && commit && push && clean-gh-pages && deploy
 

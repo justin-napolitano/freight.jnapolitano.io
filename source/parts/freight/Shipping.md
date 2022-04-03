@@ -11,7 +11,7 @@ kernelspec:
   name: finance
 ---
 
-# Mapping US Shipping Routes and Ports
+# US Shipping Routes and Ports Analysis
 
 ## About
 
@@ -32,7 +32,7 @@ import folium
 import contextily as cx
 ```
 
-## Reading Node Shape Data into gpd DF
+## Reading Node Shape Data into DF
  
 
 ```{code-cell} ipython3
@@ -71,7 +71,7 @@ The Gulf Waters are interestengly concentrated and dependent on non US Ports.  F
 
 +++
 
-## Exploring US Ports 
+## Exploring US Ports Data Set
 
 ```{code-cell} ipython3
 gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Ports.geojson"
@@ -85,7 +85,7 @@ ports_df
 ports_df.columns
 ```
 
-#### Initial Impressions.  
+### Initial Impressions.  
 There are 24,1117 ports recorded in this dataset.  There are also 43 fields of data.  Columns of interests are Highway_No and Railway_No.  I would like to investigate this further.  
 
 +++
@@ -102,7 +102,7 @@ ax = ports_df_wm.plot(figsize=(20, 20), alpha=0.5, edgecolor='k')
 cx.add_basemap(ax, zoom=4)
 ```
 
-## Interactive Ports Map
+### Interactive Ports Map
 
 ```{code-cell} ipython3
 ports_df_wm.explore()
@@ -136,7 +136,7 @@ This data is far more managable.  It also contains data relating to freight volu
 major_ports_df_wm = major_ports_df.to_crs(epsg=3857)
 ```
 
-### Interactive Ports Map
+### Interactive Major Ports Map
 
 ```{code-cell} ipython3
 major_ports_df.explore()
