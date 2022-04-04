@@ -11,7 +11,7 @@ kernelspec:
   name: finance
 ---
 
-# Intermodal Freight Analysis.
+# Intermodal Freight Analysis
 
 ```{code-cell} ipython3
 
