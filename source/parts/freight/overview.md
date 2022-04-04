@@ -54,7 +54,7 @@ To access the western and northwestern United States rail must pass through Kans
 
 ##### St. Louis
 
-The Chicago, ST. Louis, Kansas City route is capable of moving large freight imported from Europe or the manufactured in the North East to the midwest and northwest of the United States
+The Chicago, St. Louis, Kansas City route is capable of moving large freight imported from Europe or the manufactured in the North East to the midwest and northwest of the United States.
 
 
 ##### Memphis
@@ -63,7 +63,7 @@ As the center of FedEx and the former center of the US Army Motor pool, Memphis 
 
 ##### Denver
 
-Denver is a growing city without many natural resources.   There are also no major ports or waterways that access city making it dependent on rail and trucking.  It is therefore unreasonably expensive to develop in the region. 
+Denver is a growing city without many natural resources.   There are also no major ports or waterways that access the city resulting in rail and truck dependence.It is therefore unreasonably expensive to develop in the region. 
 
 
 ##### Salt Lake City
