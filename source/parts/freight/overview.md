@@ -27,7 +27,7 @@ The Eastern United States' inland waterways system is heavily developed but unde
 
 The Chicago terminal is still a great marvel of the industrial era. It is a rail hub comparable to none other in the United States.  It is also a shipping hub that should be revitalized.  Inland waterways were historically less expensive than rail and trucking routes and provide greater efficency.  Unfortunately, rust belt towns no longer produce large volumes of items that require freight transport.  
 
-#### St. Louis 
+##### St. Louis 
 
 I currently know very little about this city.  There are rail connections and some ports located in this city that move primarily agricultural products to market.  I have not yet completed volumetric analysis to know whether this city is capable of handling large volumes or specialized freight.  
 
@@ -41,7 +41,7 @@ The terminal city of the Mississippi delta is among the United States most impor
 
 ### Rail
 
-### Important Cities
+#### Important Cities
 
 ##### Chicago
 
