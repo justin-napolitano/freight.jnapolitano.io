@@ -33,7 +33,7 @@ I currently know very little about this city.  There are rail connections and so
 
 ##### Memphis
 
-The city of Memphis is located at the center of the US network.  Understandably, FedEx centers its operations at the super hub.  Rail, ship, truck, and air routes convene at this city.  The one factor restricting the growth of this city is that the southern heading of the Mississippi requires goods to transported through the Gulf of Mexico.
+The city of Memphis is located at the center of the US network.  Understandably, FedEx centers its operations at the super hub.  Rail, ship, truck, and air routes convene at this city.
 
 ##### New Orleans
 
