@@ -98,7 +98,14 @@ ax = ports_df_wm.plot(figsize=(20, 20), alpha=0.5, edgecolor='k')
 cx.add_basemap(ax, zoom=4)
 ```
 
-### Interactive Ports Map
+
+```{eval-rst}
+
+.. index::
+   single: US Ports Map Interactive
+
+```
+### US Ports Map
 
 ```{code-cell} ipython3
 ports_df_wm.explore()
@@ -132,7 +139,13 @@ This data is far more managable.  It also contains data relating to freight volu
 major_ports_df_wm = major_ports_df.to_crs(epsg=3857)
 ```
 
-### Interactive Major Ports Map
+```{eval-rst}
+
+.. index::
+   single: Major US Ports Map Interactive
+```
+
+### Major Us Ports Map
 
 ```{code-cell} ipython3
 major_ports_df.explore()

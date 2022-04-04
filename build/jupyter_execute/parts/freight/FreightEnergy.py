@@ -296,7 +296,14 @@ def TonMilesPipeline():
 # 
 # It easy to add new reports to the project because the programs are written modularly. 
 
-# ### Carbon Production Projects
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Carbon Production Projections Plot
+# 
+# ```
+
+# ### Carbon Production Plot
 
 # In[18]:
 
@@ -304,13 +311,27 @@ def TonMilesPipeline():
 CarbonPipeline()
 
 
-# ### Carbon Dioxide Projects
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Carbon Dioxide Projections Map
+# 
+# ```
+
+# ### Carbon Dioxide Projections
 
 # In[19]:
 
 
 CPPCarbonPipeline()
 
+
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Freight Fuel Efficiency Projections Plot
+# 
+# ```
 
 # ### Freight Fuel Efficiency Projections
 
@@ -320,6 +341,13 @@ CPPCarbonPipeline()
 EfficiencyPipeline()
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: LNG Usage and Projections Plot
+# 
+# ```
+
 # ### LNG Usage and Projections
 
 # In[21]:
@@ -327,6 +355,13 @@ EfficiencyPipeline()
 
 LngUsagePipeline()
 
+
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Rail Freight Total Energy Usage Plot
+# 
+# ```
 
 # ### Rail Freight Total Energy Use
 
@@ -336,6 +371,13 @@ LngUsagePipeline()
 FreightRailUsagePipeline()
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Projected Freight Energy Usage, No CPP, Plot
+# 
+# ```
+
 # ### Projected Energy Usage without Carbon Protection Policies
 
 # In[23]:
@@ -343,6 +385,13 @@ FreightRailUsagePipeline()
 
 FreightEnergyNoCPPPipeline()
 
+
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Ton/Miles Projections Plot
+# 
+# ```
 
 # ### Ton/Miles Projections
 

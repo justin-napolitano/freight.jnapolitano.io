@@ -25,6 +25,13 @@ air_to_truck_df = gpd.read_file(gisfilepath)
 air_to_truck_df
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Air to Truck Facility Map
+# 
+# ```
+# 
 # ### Air to Truck Facility Map
 
 # In[3]:
@@ -45,6 +52,13 @@ roll_on_off_df = gpd.read_file(gisfilepath)
 roll_on_off_df
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Marine Roll On/ Roll Off Map
+# 
+# ```
+# 
 # ### Marine Roll on/Role Off Map
 
 # In[5]:
@@ -74,6 +88,13 @@ rail_to_all_df = gpd.read_file(gisfilepath)
 rail_to_all_df
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Rail Freight Stations Map
+# 
+# ```
+# 
 # ### Rail Freight Stations Map
 
 # In[7]:

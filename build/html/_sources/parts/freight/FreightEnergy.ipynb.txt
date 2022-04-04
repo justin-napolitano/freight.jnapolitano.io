@@ -510,7 +510,19 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "### Carbon Production Projects"
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: Carbon Production Projections Plot\n",
+    "\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Carbon Production Plot"
    ]
   },
   {
@@ -538,7 +550,19 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "### Carbon Dioxide Projects"
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: Carbon Dioxide Projections Map\n",
+    "\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Carbon Dioxide Projections"
    ]
   },
   {
@@ -560,6 +584,18 @@
    ],
    "source": [
     "CPPCarbonPipeline()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: Freight Fuel Efficiency Projections Plot\n",
+    "\n",
+    "```"
    ]
   },
   {
@@ -594,6 +630,18 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: LNG Usage and Projections Plot\n",
+    "\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "### LNG Usage and Projections"
    ]
   },
@@ -616,6 +664,18 @@
    ],
    "source": [
     "LngUsagePipeline()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: Rail Freight Total Energy Usage Plot\n",
+    "\n",
+    "```"
    ]
   },
   {
@@ -650,6 +710,18 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: Projected Freight Energy Usage, No CPP, Plot\n",
+    "\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "### Projected Energy Usage without Carbon Protection Policies"
    ]
   },
@@ -672,6 +744,18 @@
    ],
    "source": [
     "FreightEnergyNoCPPPipeline()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{eval-rst}\n",
+    "\n",
+    ".. index::\n",
+    "   single: Ton/Miles Projections Plot\n",
+    "\n",
+    "```"
    ]
   },
   {

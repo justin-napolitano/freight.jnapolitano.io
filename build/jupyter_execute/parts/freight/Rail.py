@@ -60,7 +60,14 @@ line_df.crs
 line_wm = line_df.to_crs(epsg=3857)
 
 
-# ## Plotting Rail Lines in the United States, Mexico, and Canada
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Air to Truck Facility Map
+# 
+# ```
+
+# ## Rail Lines in US, Canada, Mexico Map
 
 # In[5]:
 
@@ -77,7 +84,7 @@ cx.add_basemap(ax, zoom=4)
 line_wm.columns
 
 
-# ## Map of Texas Rail Lines
+# ## Texas Rail Lines Data
 # 
 # Texas is an important freight destination.  The state possess many natural important ports and freight stations.  
 # 
@@ -102,6 +109,13 @@ texas_lines_df = line_wm.loc[line_wm['STFIPS'] == '48']
 #print(texas_lines_df)
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Texas Rail Map Non-Interactive 
+# 
+# ```
+
 # ### Texas Non-Interactive Map
 
 # In[8]:
@@ -111,7 +125,14 @@ ax = texas_lines_df.plot(figsize=(10, 10), alpha=0.5, edgecolor='k', markersize 
 cx.add_basemap(ax, zoom=6)
 
 
-# ### Interactive Map.
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Texas Rail Map Interactive
+# 
+# ```
+
+# ### Texas Rail Map Interactive Map.
 
 # In[9]:
 

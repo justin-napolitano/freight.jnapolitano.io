@@ -56,6 +56,13 @@ print(major_transit_nodes.columns)
 major_transit_nodes
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Rail Facilities by Port Interactive Map
+# 
+# ```
+
 # ### Rail Facilities by Port Interactive Map
 # 
 
@@ -90,6 +97,13 @@ print(major_air_freight.columns)
 major_air_freight
 
 
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Air Fright Hubs by Nearest Ports Interactive Map
+# 
+# ```
+
 # ### Air Freight Hubs by Nearest Major Port Port Map
 
 # In[8]:
@@ -122,6 +136,15 @@ port_shipping.drop(columns = ['OBJECTID_left','DIR', 'ANODE', 'BNODE', 'ID_left'
 print(port_shipping.columns)
 port_shipping
 
+
+# ```{eval-rst}
+# 
+# .. index::
+#    single: Shipping Routes by Major Port Interactive Map
+# 
+# ```
+
+# ### Shipping Routes by Major Port Interactive Map
 
 # In[11]:
 
