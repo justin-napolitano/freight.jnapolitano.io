@@ -56,7 +56,7 @@ parts/freight/FreightEnergy.ipynb
 :caption: US Shipping Routes and Ports
 :maxdepth: 3
 
-parts/freight/Shipping.md
+parts/freight/Shipping.ipynb
 ```
 :::
 
