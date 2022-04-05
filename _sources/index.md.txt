@@ -95,6 +95,23 @@ parts/freight/us_network.ipynb
 :::
 
 
+## US Energy Analysis
+
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: US Energy Analysis
+:maxdepth: 3
+
+parts/energy/power_plants.ipynb
+```
+:::
+
 ## Contact
 
 :::{raw} html

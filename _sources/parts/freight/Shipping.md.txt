@@ -32,7 +32,7 @@ import contextily as cx
  
 
 ```{code-cell} ipython3
-gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Navigable_Waterway_Lines.geojson"
+gisfilepath = "/Users/jnapolitano/Projects/freight.jnapolitano.io/source/data/shipping/Navigable_Waterway_Lines.geojson"
 
 waterway_df = gpd.read_file(gisfilepath)
 
@@ -70,7 +70,7 @@ The Gulf Waters are interestengly concentrated and dependent on non US Ports.  F
 ## US Ports Data Set
 
 ```{code-cell} ipython3
-gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Ports.geojson"
+gisfilepath = "/Users/jnapolitano/Projects/freight.jnapolitano.io/source/data/shipping/Ports.geojson"
 
 ports_df = gpd.read_file(gisfilepath)
 
@@ -120,7 +120,7 @@ It is interesting to see all of the ports in the UNited States, but I notice tha
 ## Major US Ports Data Set
 
 ```{code-cell} ipython3
-gisfilepath = "/Users/jnapolitano/Projects/rail-mapping/shipping/Major_Ports.geojson"
+gisfilepath = "/Users/jnapolitano/Projects/freight.jnapolitano.io/source/data/shipping/Major_Ports.geojson"
 
 major_ports_df = gpd.read_file(gisfilepath)
 
