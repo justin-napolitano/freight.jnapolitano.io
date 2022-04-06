@@ -4,6 +4,12 @@
 
 I prepared this project to better understandand US freight networks.  
 
+## Data Sources
+
+### Data.gov
+
+### https://data-usdot.opendata.arcgis.com/
+
 ## Take Aways
 
 
