@@ -95,7 +95,7 @@ parts/freight/us_network.ipynb
 :::
 
 
-## US Energy Analysis
+## US Energy Overview
 
 :::{raw} html
 
@@ -105,12 +105,31 @@ parts/freight/us_network.ipynb
 :::{card}
 
 ```{toctree}
-:caption: US Energy Analysis
+:caption: US Energy Network Overview
 :maxdepth: 3
 
 parts/energy/power_plants.ipynb
 ```
 :::
+
+
+## US Natural Gas Network Overview
+
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: Natural Gas Network Overview
+:maxdepth: 3
+
+parts/energy/natural_gas.ipynb
+```
+:::
+
 
 ## Contact
 
