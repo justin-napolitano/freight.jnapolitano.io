@@ -77,6 +77,30 @@ parts/freight/intermodal.md
 ```
 :::
 
+
+
+## US Natural Gas Network Overview
+
+:::{raw} html
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+:::
+
+:::{card}
+
+```{toctree}
+:caption: Natural Gas Overview
+:maxdepth: 3
+
+parts/energy/gas-fields
+parts/energy/natural-gas-facilities
+parts/energy/natural-gas-pipelines
+parts/energy/natural-gas-market-hubs
+
+```
+:::
+
+
 ## Freight Network Analysis
 
 :::{raw} html
@@ -91,42 +115,6 @@ parts/freight/intermodal.md
 :maxdepth: 3
 
 parts/freight/us_network.ipynb
-```
-:::
-
-
-## US Energy Overview
-
-:::{raw} html
-
-    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-:::
-
-:::{card}
-
-```{toctree}
-:caption: US Energy Network Overview
-:maxdepth: 3
-
-parts/energy/power_plants.ipynb
-```
-:::
-
-
-## US Natural Gas Network Overview
-
-:::{raw} html
-
-    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-:::
-
-:::{card}
-
-```{toctree}
-:caption: Natural Gas Network Overview
-:maxdepth: 3
-
-parts/energy/natural_gas.ipynb
 ```
 :::
 
