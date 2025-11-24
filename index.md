@@ -22,6 +22,13 @@ seoSecondaryKeywords:
   - python
   - documentation
 seoOptimized: true
+topicFamily: datascience
+topicFamilyConfidence: 0.9
+topicFamilyNotes: >-
+  The post centers on geospatial data processing, freight network analysis, and use of Python data
+  science libraries and notebooks, fitting well with the 'Datascience' family focusing on data
+  analysis, ETL pipelines, and scientific workflows. While automation is present, it is mostly in
+  support of the data analysis framework rather than the main focus.
 ---
 
 # freight.jnapolitano.io: Technical Overview and Implementation Notes
@@ -73,4 +80,5 @@ Sphinx is configured with several extensions to support blogging (`ablog`), note
 ## Summary
 
 freight.jnapolitano.io provides a reproducible framework for freight network analysis combining geospatial data processing, automated documentation builds, and deployment pipelines. It serves as a technical foundation for ongoing research into US freight infrastructure and logistics.
+
 
