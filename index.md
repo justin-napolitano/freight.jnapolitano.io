@@ -1,12 +1,28 @@
 ---
-slug: "github-freight.jnapolitano.io"
-title: "freight.jnapolitano.io"
-repo: "justin-napolitano/freight.jnapolitano.io"
-githubUrl: "https://github.com/justin-napolitano/freight.jnapolitano.io"
-generatedAt: "2025-11-23T08:58:01.888666Z"
-source: "github-auto"
+slug: github-freight.jnapolitano.io
+title: 'freight.jnapolitano.io: Framework for US Freight Network Analysis'
+repo: justin-napolitano/freight.jnapolitano.io
+githubUrl: https://github.com/justin-napolitano/freight.jnapolitano.io
+generatedAt: '2025-11-23T08:58:01.888666Z'
+source: github-auto
+summary: >-
+  Technical overview of freight.jnapolitano.io, a reproducible framework combining geospatial data
+  processing, automated documentation, and deployment for freight network analysis.
+tags:
+  - geospatial
+  - freight-analysis
+  - python
+  - data-science
+  - automation
+  - documentation
+seoPrimaryKeyword: freight network analysis
+seoSecondaryKeywords:
+  - geospatial data
+  - automation
+  - python
+  - documentation
+seoOptimized: true
 ---
-
 
 # freight.jnapolitano.io: Technical Overview and Implementation Notes
 
@@ -57,3 +73,4 @@ Sphinx is configured with several extensions to support blogging (`ablog`), note
 ## Summary
 
 freight.jnapolitano.io provides a reproducible framework for freight network analysis combining geospatial data processing, automated documentation builds, and deployment pipelines. It serves as a technical foundation for ongoing research into US freight infrastructure and logistics.
+
