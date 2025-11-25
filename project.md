@@ -1,14 +1,14 @@
 ---
 slug: github-freight-jnapolitano-io
 id: github-freight-jnapolitano-io
-title: Data-Driven Analysis of US Freight Networks
+title: Data Analysis of US Freight Networks with Freight.jnapolitano.io
 repo: justin-napolitano/freight.jnapolitano.io
 githubUrl: https://github.com/justin-napolitano/freight.jnapolitano.io
 generatedAt: '2025-11-24T21:34:48.684Z'
 source: github-auto
 summary: >-
-  Explore and visualize US freight networks with this data-driven project using
-  Python, Jupyter, and automation scripts.
+  Explore the freight.jnapolitano.io project for analyzing and visualizing US
+  freight networks using Python and Jupyter Notebooks.
 tags:
   - python
   - jupyter
@@ -18,13 +18,16 @@ tags:
   - GitHub Pages
   - automation
   - GIS
+  - gis mapping
+  - github pages
+  - sphinx
 seoPrimaryKeyword: US freight network analysis
 seoSecondaryKeywords:
-  - data visualization tools
-  - freight transport analysis
-  - Python automation scripts
-  - Jupyter notebook projects
+  - freight data visualization
   - geospatial analysis
+  - python data processing
+  - automated documentation deployment
+  - Jupyter Notebook projects
 seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
