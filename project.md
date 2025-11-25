@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/freight.jnapolitano.io
 generatedAt: '2025-11-24T21:34:48.684Z'
 source: github-auto
 summary: >-
-  Explore the freight.jnapolitano.io project for analyzing and visualizing US
-  freight networks using Python and Jupyter Notebooks.
+  Explore the freight.jnapolitano.io project for analyzing and visualizing US freight networks using
+  Python and Jupyter Notebooks.
 tags:
   - python
   - jupyter
@@ -29,8 +29,8 @@ seoSecondaryKeywords:
   - automated documentation deployment
   - Jupyter Notebook projects
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: datascience
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -140,4 +140,5 @@ freight.jnapolitano.io/
 - Automate data updates and refresh workflows
 - Improve documentation coverage and examples
 - Refine deployment and backup scripts for greater robustness
+
 
