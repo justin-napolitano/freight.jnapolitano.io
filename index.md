@@ -1,13 +1,13 @@
 ---
 slug: github-freight.jnapolitano.io
-title: 'freight.jnapolitano.io: Framework for US Freight Network Analysis'
+title: Freight Transportation Network Analysis with Python
 repo: justin-napolitano/freight.jnapolitano.io
 githubUrl: https://github.com/justin-napolitano/freight.jnapolitano.io
 generatedAt: '2025-11-23T08:58:01.888666Z'
 source: github-auto
 summary: >-
-  Technical overview of freight.jnapolitano.io, a reproducible framework combining geospatial data
-  processing, automated documentation, and deployment for freight network analysis.
+  Explore a framework for analyzing US freight transportation networks using
+  geospatial data and automated documentation.
 tags:
   - geospatial
   - freight-analysis
@@ -15,20 +15,28 @@ tags:
   - data-science
   - automation
   - documentation
-seoPrimaryKeyword: freight network analysis
+  - geospatial analysis
+  - sphinx
+  - data visualization
+  - freight logistics
+seoPrimaryKeyword: freight transportation network analysis
 seoSecondaryKeywords:
-  - geospatial data
-  - automation
-  - python
-  - documentation
+  - geospatial data processing
+  - automated documentation
+  - python data analysis
+  - freight infrastructure
+  - logistics visualization
 seoOptimized: true
 topicFamily: datascience
 topicFamilyConfidence: 0.9
 topicFamilyNotes: >-
-  The post centers on geospatial data processing, freight network analysis, and use of Python data
-  science libraries and notebooks, fitting well with the 'Datascience' family focusing on data
-  analysis, ETL pipelines, and scientific workflows. While automation is present, it is mostly in
-  support of the data analysis framework rather than the main focus.
+  The post centers on geospatial data processing, freight network analysis, and
+  use of Python data science libraries and notebooks, fitting well with the
+  'Datascience' family focusing on data analysis, ETL pipelines, and scientific
+  workflows. While automation is present, it is mostly in support of the data
+  analysis framework rather than the main focus.
+kind: project
+id: github-freight.jnapolitano.io
 ---
 
 # freight.jnapolitano.io: Technical Overview and Implementation Notes
